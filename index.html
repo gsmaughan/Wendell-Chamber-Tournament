@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <script src="assets/javascript/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Wendell CofC Tournament</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- LINK TO FIREBASE GOES HERE -->
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+
+  </head>
+
+  <body>
+
+    <header><h2>2018 Wendell Chamber of Commerce Golf Tournament</h2></header>
+
+     <div class="conatiner">
+
+        <div id="row1">
+
+          <div class="col-lg-6" id="topLeft">
+            <div id="images">
+              <img src="assets/images/logo.png" alt="Chamber Logo" id="chamberLogo">
+              <img src="assets/images/EWEF.png" alt="EWEF logo" id="EWEFlogo">
+              <img src="assets/images/wcc logo.jpg" alt="WCC Logo" id="wccLogo">
+
+            </div>
+            <div id="box1">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title" id="label">Participating Teams</h3>
+                </div>
+                <div class="panel-body">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                          <th scope="col" id="display">Player 1</th>
+                          <th scope="col" id="display">Player 2</th>
+                          <th scope="col" id="display">Player 3</th>
+                          <th scope="col" id="display">Sponsorship Level</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                          <th scope="row" id="first"></th>
+                          <td id="second"></td>
+                          <td id="third"></td>
+                          <td id="fourth"></td>
+                          <td id="sponsorship"></td>
+                        
+                      </tr>
+                   <div id="full-team-list"></div>
+                    </tbody>
+                  </table> <!-- end table -->
+
+
+
+                </div> <!-- //end panel-body -->
+
+              </div> <!-- end panel-panel-default -->
+
+              </div> <!-- end box1 -->
+
+            
+          </div> <!-- end top left -->
+
+          <div class="col-lg-6" id="topRight">
+              <div id="box2">
+                <div class="panel panel-default">
+                <!-- done1   --><div class="panel-heading">
+                    <h3 class="panel-title" id="label">Register Your Team</h3>
+                <!--  done1  --></div>
+
+                  <div class="panel-body" id="rightBackground">
+
+              <!-- Sign-up Form (note the various input "types")-->
+                    <form role="form">
+                      <div class="form-group">
+                        <label for="p1-input">Player 1</label>
+                       <input class="form-control" id="player1" type="text">
+                      </div>
+                      <div class="form-group">
+                        <label for="p2-input">Player 2</label>
+                        <input class="form-control" id="player2" type="text">
+                      </div>
+                      <div class="form-group">
+                        <label for="p3-input">Player 3</label>
+                        <input class="form-control" id="player3" type="text">
+                      </div>
+                    </form>
+                  
+
+                    <!-- <form action="/action_page.php">
+                      <input list="package" name="package" id="package">
+                      <datalist id="datalist">
+                        <option value="Moe"></option>
+                        <option value="Curly"></option>
+                        <option value="Larry"></option>
+                      </datalist>
+                      <input type="submit" id="submit">
+                    </form> -->
+
+                    <form action="">
+                      <label for="sponsorship-level">Sponsorship Level</label>
+                        <input list="browsers" name="browser" id="package">
+                        <datalist id="browsers">
+                            <option value="Moe"></option>
+                            <option value="Curly"></option>
+                            <option value="Larry"></option>
+                        </datalist>
+                        <input type="submit" id="submit">
+                    </form>
+ 
+                    
+
+                    <div id="info">
+                        <div class="col-lg-4" id="left">
+                          <img src="assets/images/stooges.png" alt="3 Stooges" id="stooges">
+                          Contact Wendell Country Club with questions.  (919) 365-7337
+                        </div>
+                        
+                        <div class="col-lg-8" id="right">
+
+                          <div id="box">
+                              <label id="title">Date/Time</label>
+                              <div id="info">Friday, May 11 at Noon - Wendell CC</div>
+                          </div>
+
+                          <div id="box">
+                                <label id="title">"Moe" Platinum sponsorship: $550</label>
+                                <div id="info">Golf and dinner for 3, Large Company Flag, Tee sponsorship sign, and recognition during tournament and dinner, and social media blast before tournament.</div>
+                          </div>
+
+                          <div id="box">
+                                <label id="title">"Curly" Corporate sponsorship: $400</label>
+                                <div id="info">Golf and dinner for 3, Tee sponsorship sign, social media blast before tournament.</div>
+                          </div>
+
+                          <div id="box">
+                                <label id="title">"Larry" Team sponsorship: $300</label>
+                                <div id="info">Golf and dinner for 3.</div>
+                          </div>
+
+
+                          
+                          
+                          <!-- <label for="male">Male</label>
+                          <label for="male">Male</label>
+                          <label for="male">Male</label>
+                        </div> -->
+
+                    </div>
+
+
+                </div>
+                
+     </div> <!-- end container -->
+
+  </body>
+
+  </html>

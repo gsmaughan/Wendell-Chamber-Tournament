@@ -1,0 +1,61 @@
+#images{
+	height: 150px;
+	margin: 20px;
+
+	/*padding: 20px;*/
+	border-color: black;
+
+	/*background-color: red;*/
+}
+#chamberLogo{
+	width: 50%;
+	padding: 20px;
+	/*border-color: black;*/
+	/*padding: 20px;*/
+}
+#wccLogo{
+	height: 95px;
+	padding: 10px;
+	/*float: right;*/
+	/*border-color: black;*/
+	/*padding: 20px;*/
+}
+
+#EWEFlogo{
+	height: 80%;
+	padding: 20px;
+}
+
+#label{
+	color: #1858cd;
+	font-weight: bold;
+}
+
+body{
+	background: radial-gradient(#8ae600, #1858cd);
+}
+
+#sponsorship{
+	width: 697.6px;
+	height: 34px;
+}
+
+#display{
+	width: 500px;
+	height: 34px;
+}
+#box{
+	margin: 4px;
+	padding: 6px;
+	border: 2px solid blue;
+}
+header{
+	color: white;
+    text-shadow: 2px 2px 4px #000000;
+    margin: auto;
+    width: 50%;
+
+}
+#box2{
+	position: static;
+}
